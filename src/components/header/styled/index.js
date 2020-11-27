@@ -13,9 +13,10 @@ export const Logo = styled.div`
     color: var(--white);
     width: 5em;
     height: 100%;
-    background-color: var(--secondary-dark);
+    font-family: cursive;
+    font-size: 24px;
     ${centerPositionStyles};
     &:after {
-        content: "SPS"
+        content: "Sarath"
     }
 `;

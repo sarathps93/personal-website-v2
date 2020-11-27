@@ -22,23 +22,24 @@ const ContactMeForm = ({ setPortal }) => {
 
     const inputRef = createRef('');
     const stopImmediatePropagation = (e) => e.nativeEvent.stopImmediatePropagation();
+    const shouldEnableSubmit = Object.keys(userInput).every(key => !!userInput[key]);
 
     const handleUserInput = (e) => {
         const modifiedState = { ...userInput, [e.target.id]: e.target.value };
-        setUserInput(modifiedState)
+        setUserInput(modifiedState);
     };
 
     useLayoutEffect(() => {
         setTimeout(() => {
             inputRef.current.focus();
-        }, 0)        
+        }, 0);  
     }, [])
-
-    const shouldSubmitDisabled = Object.keys(userInput).every(key => !!userInput[key]);
 
     const handleMessageSubmit = (e) => {
         e.preventDefault();
-        setFormSubmitted(true);
+        if(shouldEnableSubmit) {
+            setFormSubmitted(true);
+        }
     }
 
     const SubmittedScreen = () => (
@@ -46,7 +47,7 @@ const ContactMeForm = ({ setPortal }) => {
             <img src={successSvg} alt="success" />
             Thank you for your message. I will get back to you shortly.
         </SuccessMessge>
-    )
+    );
 
     return (
         <ContactForm onClick={stopImmediatePropagation} onSubmit={handleMessageSubmit}>
@@ -88,7 +89,7 @@ const ContactMeForm = ({ setPortal }) => {
                 {!formSubmitted && (
                     <Submit
                         color="#365C7D"
-                        disabled={!shouldSubmitDisabled}
+                        disabled={!shouldEnableSubmit}
                         type="submit"
                     >
                         Submit

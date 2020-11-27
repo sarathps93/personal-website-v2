@@ -16,7 +16,6 @@ export const AppContainer = styled.div`
 
 export const Card = styled.section`
     width: 100%;
-    min-width: 300px;
     background-color: var(--white);
     box-sizing: border-box;
     padding: 18px;
