@@ -66,20 +66,20 @@ const contents = {
     ],
     languages: [
         {
-            label: 'English',
-            level: 5
+            language: 'English',
+            proficiency: 5
         },
         {
-            label: 'Malayalam',
-            level: 5
+            language: 'Malayalam',
+            proficiency: 5
         },
         {
-            label: 'Tamil',
-            level: 4
+            language: 'Tamil',
+            proficiency: 4
         },
         {
-            label: 'Hindi',
-            level: 4
+            language: 'Hindi',
+            proficiency: 4
         },
     ],
 };

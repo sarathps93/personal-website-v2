@@ -69,9 +69,9 @@ const Profile = () => {
             <Card>
             <SubHeading>I can coversate with you in</SubHeading>
                 {contents.languages.map(lang => (
-                    <LangContainer key={lang.label}>
-                        <Language>{lang.label}</Language>
-                        <LanguageProficiency level={lang.level} />
+                    <LangContainer key={lang.language}>
+                        <Language>{lang.language}</Language>
+                        <LanguageProficiency proficiency={lang.proficiency} />
                     </LangContainer>
                 ))}
             </Card>
