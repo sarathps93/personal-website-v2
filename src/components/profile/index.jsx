@@ -7,16 +7,24 @@ import {
     ProfilePhoto,
     Name,
     Designation,
-    StyledAnchor,
     AnchorButton
 } from './styled';
-import { Card, FlexContainer, GridContainer, SubHeading } from '../../styles/styled';
+import {
+    Card,
+    FlexContainer,
+    GridContainer,
+    SubHeading,
+    AlignCenter,
+    StyledAnchor
+} from '../../styles/styled';
 
 const Profile = () => {
     return (
         <Container>
-            <ProfilePhoto src={Image} />
             <Card>
+            <AlignCenter>
+                <ProfilePhoto src={Image} />
+            </AlignCenter>
             <Name>{contents.name}</Name>
             <Designation>{contents.designation}</Designation>
             <FlexContainer style={{ marginTop: '6px' }}>
@@ -31,7 +39,7 @@ const Profile = () => {
                     </StyledAnchor>
                 ))}
             </FlexContainer>
-            </Card>            
+            </Card>
             <Card>
             <SubHeading>Contact me through</SubHeading>
                 <GridContainer>

@@ -8,8 +8,8 @@ import styled from 'styled-components';
 `;
 
 export const ProfilePhoto = styled.img`
-    width: 320px;
-    height: 320px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-bottom: 12px;
 `;

@@ -1,13 +1,19 @@
 import { AppContainer } from './styles/styled';
 import Profile from './components/profile';
-import PageFlip from './components/pageFlips';
+import PageFlip from './components/profileFeed';
+import Header from './components/header';
+import SidePane from './components/sidePane';
 
 function App() {
   return (
-    <AppContainer>
-      <Profile />
-      <PageFlip />
-    </AppContainer>
+    <>
+      <Header />
+      <AppContainer>
+        <Profile />
+        <PageFlip />
+        <SidePane />
+      </AppContainer>
+    </>
   );
 }
 

@@ -51,7 +51,24 @@ const contents = {
             id: 'career',
             label: 'Career'
         }
-    ] 
+    ],
+    primarySkills: [
+        'JavaScript',
+        'NodeJs',
+        'TypeScript',
+        'HTML5',
+        'CSS3',
+        'React/Redux',
+        'GraphQL',
+        'Kubernetes',
+        'AWS'
+    ],
+    openSourceContributions: [
+        { text: 'Jest', link: 'https://github.com/facebook/jest' },
+        { text: 'React', link: 'https://github.com/facebook/react' },
+        { text: 'WebdriverIO', link: 'https://github.com/webdriverio/webdriverio' },
+        { text: 'VisX', link: 'https://github.com/airbnb/visx' },
+    ]
 };
 
 export default contents;
