@@ -1,4 +1,4 @@
-import { AppContainer } from './styles/styled';
+import { AppContainer } from './styles/common';
 import Profile from './components/profile';
 import PageFlip from './components/profileFeed';
 import Header from './components/header';

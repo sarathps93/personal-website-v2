@@ -18,11 +18,6 @@ const contents = {
             href: 'mailto:sarathps93@gmail.com'
         },
         {
-            id: 'resume',
-            label: 'Resume',
-            href: ''
-        },
-        {
             id: 'github',
             label: 'GitHub',
             href: 'https://github.com/sarathps93'
@@ -68,7 +63,25 @@ const contents = {
         { text: 'React', link: 'https://github.com/facebook/react' },
         { text: 'WebdriverIO', link: 'https://github.com/webdriverio/webdriverio' },
         { text: 'VisX', link: 'https://github.com/airbnb/visx' },
-    ]
+    ],
+    languages: [
+        {
+            label: 'English',
+            level: 5
+        },
+        {
+            label: 'Malayalam',
+            level: 5
+        },
+        {
+            label: 'Tamil',
+            level: 4
+        },
+        {
+            label: 'Hindi',
+            level: 4
+        },
+    ],
 };
 
 export default contents;

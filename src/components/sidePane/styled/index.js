@@ -1,10 +1,10 @@
 import styled from 'styled-components';
+import { verticalAlign } from '../../../styles/common';
 
 export const Container = styled.div`
-    display: flex;
+    ${verticalAlign};
+    width: 25%;
     flex-direction: column;
-    align-items: center;
-    margin-left: 24px;
 `;
 
 export const SkillItem = styled.div`
@@ -12,5 +12,5 @@ export const SkillItem = styled.div`
     margin: 12px 4px;
     text-align: center;
     padding-bottom: 6px;
-    border-bottom: 1px solid rgb(204, 204, 204);
+    border-bottom: var(--border);
 `;

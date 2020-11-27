@@ -11,15 +11,17 @@ export const AppContainer = styled.div`
     display: flex;
     box-sizing: border-box;
     margin-top: 52px;
+    justify-content: space-between;
 `;
 
 export const Card = styled.section`
     width: 100%;
-    background-color: white;
+    min-width: 300px;
+    background-color: var(--white);
     box-sizing: border-box;
     padding: 18px;
     margin: 6px 0;
-    border: 1px solid rgb(204, 204, 204);
+    border: var(--border);
     border-radius: 24px;
 `;
 
@@ -37,14 +39,12 @@ export const GridContainer = styled.div`
     grid-gap: 24px 0;
 `;
 
-export const GridContainer3X3 = styled(GridContainer)`
-    grid-template-columns: auto auto auto;
-`;
 
 export const SubHeading = styled.h3`
     font-size: 18px;
     margin-top: 0;
     text-align: center;
+    margin-bottom: 18px;
 `
 
 export const centerPositionStyles = css`
@@ -59,8 +59,29 @@ export const StyledAnchor = styled.a`
     align-items: center;
     margin-right: 6px;
     font-size: 16px;
-    color: #00539F;
+    color: var(--primary);
     span {
         margin-left: 6px
     }
 `;
+
+export const StyledInput = styled.input`
+    width: 100%;
+    padding: 12px;
+    font: inherit;
+    margin-top: 12px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    border: var(--border);
+    outline: none;
+`;
+
+export const StyledForm = styled.form`
+    box-sizing: border-box;
+`;
+
+export const verticalAlign = css`
+    display: flex;
+    align-items: center;
+`;
+

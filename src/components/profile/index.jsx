@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import Image from '../../assets/images/photo.jpg';
 import contents from '../../contents';
 
@@ -7,7 +8,10 @@ import {
     ProfilePhoto,
     Name,
     Designation,
-    AnchorButton
+    AnchorButton,
+    LangContainer,
+    Circle,
+    Language
 } from './styled';
 import {
     Card,
@@ -16,9 +20,17 @@ import {
     SubHeading,
     AlignCenter,
     StyledAnchor
-} from '../../styles/styled';
+} from '../../styles/common';
 
 const Profile = () => {
+    const LanguageProficiency = ({ proficiency }) => (
+        <Fragment>
+            {Array.from({ length: 5 }).map((_, idx) => (
+                <Circle key={idx} fill={idx <= proficiency - 1} />
+            ))}
+        </Fragment>
+    );
+
     return (
         <Container>
             <Card>
@@ -27,7 +39,7 @@ const Profile = () => {
             </AlignCenter>
             <Name>{contents.name}</Name>
             <Designation>{contents.designation}</Designation>
-            <FlexContainer style={{ marginTop: '6px' }}>
+            <FlexContainer style={{ marginTop: '12px', marginBottom: '6px' }}>
                 {contents.contactInfo.map(item => (
                     <StyledAnchor
                         href={item.href}
@@ -54,9 +66,17 @@ const Profile = () => {
                     ))}
                 </GridContainer>
             </Card>
+            <Card>
+            <SubHeading>I can coversate with you in</SubHeading>
+                {contents.languages.map(lang => (
+                    <LangContainer key={lang.label}>
+                        <Language>{lang.label}</Language>
+                        <LanguageProficiency level={lang.level} />
+                    </LangContainer>
+                ))}
+            </Card>
         </Container>
     )
-
 };
 
 export default Profile;

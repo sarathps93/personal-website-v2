@@ -1,8 +1,9 @@
 import { useState } from 'react';
 
-import { Card } from '../../styles/styled';
+import { Card } from '../../styles/common';
 import contents from '../../contents';
-import Navigation from '../navigation';
+import ContactMe from '../contactMe';
+import { Container } from './styled';
 
 
 const ProfileFeed = () => {
@@ -10,9 +11,12 @@ const ProfileFeed = () => {
     const handleNavOnClick = (e) => setSelectedNav(e.target.id);
 
     return (
-        <Card>
-            <Navigation selected={selectedNav} onClick={handleNavOnClick} />
-        </Card>
+        <Container>
+            <Card>
+                {/* <Navigation selected={selectedNav} onClick={handleNavOnClick} /> */}
+                <ContactMe />
+            </Card>
+        </Container>
     )
 }
 

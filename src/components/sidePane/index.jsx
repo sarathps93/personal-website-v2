@@ -1,5 +1,5 @@
 import { Container, SkillItem } from './styled';
-import { Card, SubHeading, FlexContainer, GridContainer3X3, StyledAnchor } from '../../styles/styled';
+import { Card, SubHeading, FlexContainer, StyledAnchor } from '../../styles/common';
 import contents from '../../contents';
 
 const SidePane = () => {

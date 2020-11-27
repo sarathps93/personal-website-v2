@@ -1,11 +1,21 @@
 html {
-    height: 100%
+    height: 100%;
+    --primary: #00539F;
+    --border-color: rgb(204,204,204);
+    --border: 1px solid var(--border-color);
+    --secondary: #157eb3;
+    --secondary-dark: #074a6f;
+    --white: #fff;
 }
 
 #root {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
