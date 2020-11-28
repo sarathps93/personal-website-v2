@@ -5,7 +5,6 @@ export const AlignCenter = styled.div`
     text-align: center;
 `;
 
-
 export const AppContainer = styled.div`
     padding: 18px;
     display: flex;
@@ -84,3 +83,6 @@ export const verticalAlign = css`
     align-items: center;
 `;
 
+export const VerticalAlign = styled.div`
+    ${verticalAlign};
+`;

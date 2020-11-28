@@ -1,4 +1,5 @@
 import locationSVG from '../assets/svgs/location.svg';
+import { age, experience } from '../utils/appUtils';
 
 const contents = {
     name: 'Sarath P S',
@@ -8,7 +9,7 @@ const contents = {
             id: 'location',
             content: 'Bengaluru, India',
             icon: locationSVG,
-            href: 'https://en.wikipedia.org/wiki/Bangalore'
+            href: 'https://www.google.com/maps/place/Bengaluru,+Karnataka/'
         },
     ],
     additionalInfo: [
@@ -82,6 +83,18 @@ const contents = {
             proficiency: 4
         },
     ],
+    aboutMe: `Hi, I am Sarath, a ${age} year old Software Developer. I have got ${experience} years of experience in Software develoment, testing, automation, deployment & maintenance.
+            <div>I am currently working with <strong class="profile-feed__strong"><a href="https://www.tesco.com/" class="profile-feed__link" target="__blank" rel="noopener noreferrer">Tesco Bengaluru</a></strong> <span class="reference-text">(through Publicis Sapient)</span> as an SDE-II. I have got experience in working with some other big clients such as <strong class="profile-feed__strong"><a href="https://www.lloydsbank.com/" class="profile-feed__link" target="__blank" rel="noopener noreferrer">Lloyds Banking Group</a></strong> <span class="reference-text">(3y)</span> & <strong class="profile-feed__strong"><a href="https://www.walmart.com/" class="profile-feed__link" target="__blank" rel="noopener noreferrer">Walmart</a></strong> <span class="reference-text">(1.3y)</span>.</div>
+            <div style="margin-top: 1em;">I specialise in</div>
+            <ul class="profile-feed__ul"> 
+            <li>Building enterprise level web applications using React - Redux or with plain vanilla JavaScript</li>
+            <li>Developing NodeJs server applications along with GraphQL using JavaScript or TypeScript</li>
+            <li>Automation of functional and non-functional software testing using NodeJs test frameworks such as WebDriverIO or Selenium</li>
+            <li>Kubernetes deployment, scaling, logging & monitoring</li>
+            </ul>
+            <p>I love developing applications which enhances the online experience of users worldwide.
+            I am also an open source contributor in <strong class="profile-feed__strong">React</strong>, <strong class="profile-feed__strong">Jest</strong>, <strong class="profile-feed__strong">WebDriverIO</strong> & <strong class="profile-feed__strong">VisX</strong> libraries.</p>
+            `
 };
 
 export default contents;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { WriteSomethingButton, DownloadResume } from './styled';
 import WritePostSvg from '../../assets/svgs/writepost.svg';
 
-import Portal from '../portal';
+import Portal from '../../molecules/portal';
 import ContactMeForm from './ContactMeForm';
 
 const ContactMe = () => {

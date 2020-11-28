@@ -7,6 +7,7 @@ export const Container = styled.header`
     background-color: var(--secondary);
     position: fixed;
     top: 0;
+    z-index: 9999;
 `;
 
 export const Logo = styled.div`

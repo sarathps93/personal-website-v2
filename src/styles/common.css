@@ -1,5 +1,4 @@
 html {
-    height: 100%;
     --primary: #00539F;
     --border-color: rgb(204,204,204);
     --border: 1px solid var(--border-color);
@@ -26,4 +25,18 @@ code {
       monospace;
 }
 
+.reference-text {
+    opacity: 0.6;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.profile-feed__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.profile-feed__strong {
+    font-weight: 600;
+}
 

@@ -1,8 +1,8 @@
 import { AppContainer } from './styles/common';
-import Profile from './components/profile';
-import PageFlip from './components/profileFeed';
-import Header from './components/header';
-import SidePane from './components/sidePane';
+import Profile from './organisms/profile';
+import PageFlip from './organisms/profileFeed';
+import Header from './molecules/header';
+import SidePane from './organisms/sidePane';
 
 function App() {
   return (
