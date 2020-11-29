@@ -11,6 +11,9 @@ export const AppContainer = styled.div`
     box-sizing: border-box;
     margin-top: 52px;
     justify-content: space-between;
+    @media(max-width: 767px) {
+        display: block;
+    }
 `;
 
 export const Card = styled.section`
@@ -35,6 +38,12 @@ export const GridContainer = styled.div`
     justify-content: space-around;
     align-content: space-around;
     grid-gap: 24px 0;
+    @media(max-width: 1000px) {
+        grid-template-columns: auto;
+    }
+    @media(max-width: 767px) {
+        grid-template-columns: auto auto;
+    }
 `;
 
 

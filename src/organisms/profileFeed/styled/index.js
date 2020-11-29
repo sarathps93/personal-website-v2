@@ -3,6 +3,9 @@ import { SubHeading } from '../../../styles/common';
 
 export const Container = styled.div`
     width: 50%;
+    @media(max-width: 767px) {
+        width: 100%;
+    }
 `;
 
 export const FeedHeading = styled(SubHeading)`

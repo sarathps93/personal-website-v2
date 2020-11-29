@@ -10,21 +10,20 @@ const Portal = ({ children, setPortal }) => {
 
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
     const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft; 
-  
-    window.onscroll = () =>  { 
-        window.scrollTo(scrollLeft, scrollTop); 
-    };
 
+    const onScroll = () => window.scrollTo(scrollLeft, scrollTop);
     const toggleOffPortal = () => setPortal(false);
 
     useEffect(() => {
         document.body.appendChild(el);
         applyPortalStyles(el);
         el.addEventListener('click', toggleOffPortal);
+        window.addEventListener('scroll', onScroll)
         return () => {
             el.removeEventListener('click', toggleOffPortal);
             document.body.removeChild(el);
             document.body.removeEventListener('scroll', preventScroll);
+            window.removeEventListener('scroll', onScroll);
         }
     }, [el]);
 

@@ -13,11 +13,25 @@ export const ImageContainer = styled.div`
     padding: 12px;
     border: var(--border);
     border-radius: 18px;
+    @media(max-width: 1000px) {
+        height: 100px;
+    }
+    @media(max-width: 767px) {
+        height: 70px;
+    }
 `;
 
 export const Image = styled.img`
     width: 150px;
     max-height: 140px;
+    @media(max-width: 1000px) {
+        width: 100px;
+        max-height: 90px;
+    }
+    @media(max-width: 767px) {
+        width: 70px;
+        max-height: 60px;
+    }
 `;
 
 export const CompanyName = styled(StyledAnchor)`

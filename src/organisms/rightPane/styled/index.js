@@ -5,6 +5,9 @@ export const Container = styled.div`
     ${verticalAlign};
     width: 25%;
     flex-direction: column;
+    @media(max-width: 767px) {
+        width: 100%;
+    }
 `;
 
 export const SkillItem = styled.div`

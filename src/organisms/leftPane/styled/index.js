@@ -5,19 +5,32 @@ import { verticalAlign } from '../../../styles/common';
     width: 23%;
     flex-direction: column;
     ${verticalAlign};
+    @media(max-width: 767px) {
+        display: inline-grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        width: 100%;
+    }
 `;
 
 export const ProfilePhoto = styled.img`
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     margin-bottom: 12px;
+    @media(max-width: 1000px) {
+        width: 100px;
+        height: 100px;
+    }
 `;
 
 export const Name = styled.div`
     font-weight: bold;
     font-size: 36px;
     text-align: center;
+    @media(max-width: 1000px) {
+        font-size: 24px;
+    }
 `;
 
 export const Designation = styled.div`
