@@ -2,9 +2,9 @@ import { Container, SkillItem } from './styled';
 import { Card, SubHeading, FlexContainer, StyledAnchor } from '../../styles/common';
 import contents from '../../contents';
 
-const SidePane = () => {
+const RightPane = () => {
     return (
-        <Container>
+        <Container className="sidepane_container">
             <Card>
                 <SubHeading>Primary Skills</SubHeading>
                 <FlexContainer>
@@ -27,4 +27,4 @@ const SidePane = () => {
     )
 };
 
-export default SidePane;
+export default RightPane;

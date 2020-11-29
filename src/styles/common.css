@@ -5,10 +5,12 @@ html {
     --secondary: #157eb3;
     --secondary-dark: #074a6f;
     --white: #fff;
+    --green: #5e9516;
 }
 
 * {
     box-sizing: border-box;
+    line-height: 1.487;
 }
 
 body {
@@ -34,6 +36,10 @@ code {
 .profile-feed__link {
     text-decoration: none;
     color: inherit;
+}
+
+.profile-feed__link:hover {
+    text-decoration: underline;
 }
 
 .profile-feed__strong {

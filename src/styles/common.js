@@ -86,3 +86,14 @@ export const verticalAlign = css`
 export const VerticalAlign = styled.div`
     ${verticalAlign};
 `;
+
+export const LinkStyleButton = styled.button`
+    background-color: var(--white);
+    border: none;
+    font: inherit;
+    padding: 0;
+    color: var(--primary);
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
+`;

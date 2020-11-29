@@ -22,7 +22,7 @@ import {
     StyledAnchor
 } from '../../styles/common';
 
-const Profile = () => {
+const LeftPane = () => {
     const LanguageProficiency = ({ proficiency }) => (
         <Fragment>
             {Array.from({ length: 5 }).map((_, idx) => (
@@ -79,4 +79,4 @@ const Profile = () => {
     )
 };
 
-export default Profile;
+export default LeftPane;
