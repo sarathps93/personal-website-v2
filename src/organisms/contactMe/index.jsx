@@ -4,6 +4,7 @@ import WritePostSvg from '../../assets/svgs/writepost.svg';
 
 import Portal from '../../molecules/portal';
 import ContactMeForm from './ContactMeForm';
+import { safeAnchorInNewTab } from '../../utils/appUtils';
 
 const ContactMe = () => {
     const [renderPortal, setRenderPortal] = useState(false);
@@ -19,7 +20,10 @@ const ContactMe = () => {
                     <ContactMeForm setPortal={setRenderPortal} />                       
                 </Portal>
             )}
-            <DownloadResume href="/">
+            <DownloadResume 
+                href="https://drive.google.com/uc?export=download&id=1_F8vmY49-M82hFgzyQuC4Jzv4GUipYtd"
+                {...safeAnchorInNewTab}
+            >
                 Download my Resume
             </DownloadResume>
         </React.Fragment>

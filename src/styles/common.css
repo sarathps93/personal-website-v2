@@ -5,7 +5,7 @@ html {
     --secondary: #157eb3;
     --secondary-dark: #074a6f;
     --white: #fff;
-    --green: #5e9516;
+    --green: #487b04;
 }
 
 * {
@@ -31,6 +31,7 @@ code {
     opacity: 0.6;
     font-style: italic;
     font-size: 14px;
+    font-weight: normal;
 }
 
 .profile-feed__link {

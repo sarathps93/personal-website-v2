@@ -35,7 +35,7 @@ const LeftPane = () => {
         <Container>
             <Card>
             <AlignCenter>
-                <ProfilePhoto src={Image} />
+                <ProfilePhoto src={Image} alt="dp" loading="lazy" />
             </AlignCenter>
             <Name>{contents.name}</Name>
             <Designation>{contents.designation}</Designation>

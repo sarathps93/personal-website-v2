@@ -1,5 +1,5 @@
 import locationSVG from '../assets/svgs/location.svg';
-import sapientImg from '../assets/images/sapient.jpg';
+import sapientImg from '../assets/images/sapient.png';
 import wiproImg from '../assets/images/wipro.png';
 import { age, experience } from '../utils/appUtils';
 
@@ -120,14 +120,14 @@ const contents = {
             href: 'https://wiprodigital.com/',
             designation: 'Software Engineer',
             dateRange: '12/2014 - 04/2020',
-            location: 'London, UK <span class="reference-text">(2.4y)</span> & Bengaluru, India',
+            location: 'London, UK & Bengaluru, India',
             imageUrl: wiproImg,
             readMoreClass: 'readmore_wipro',
             content: `I joined Wipro as a part of Campus placement offer I got during the year of 2014. My Wipro training happened in Greater Noida, NCR and my project allocation happened to be in Bengaluru.
             <p>Coming from a non computer science background, I started my career as a manual tester and later moved into the field of automation with Selenium. Inspired by my colleagues from the development team, I started learning JavaScript and slowly moved my way into front end development.</p>
             <div class="readmore_wipro"><p>During my tenure at Wipro, I worked with clients such as Lloyds Banking Group & Walmart full time.</p>
             In Walmart, I learnt about the Retail domain and I contributed to the front end development in React and automation using Selenium. I also got some exposure with MySQL as well.
-            <p>Working with Lloyds Banking Group was one of the turning points in my career. I worked closely with them in their office in London, UK for almost 2.4 years . I got a chance to work in their digital transformation journey by migrating legacy applications into newer React - Redux framework  from scratch.</p>
+            <p>Working with Lloyds Banking Group was one of the turning points in my career. I worked closely with them in their office in London, UK for almost 2.4 years. I got a chance to work in their digital transformation journey by migrating legacy applications into newer React - Redux framework  from scratch.</p>
             <p>I also learnt about developing re-usable React component library, worked in the automation of literally everything around testing using NodeJs automation frameworks. Focussing on accessibility, security, browser support & collecting analytics has become an integral part of my day to day development activities. Learnt more about distributed systems, micro services architecture, Kubernetes and Cloud infrastructure.</p></div>`
         }
     ]

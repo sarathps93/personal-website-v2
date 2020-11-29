@@ -1,4 +1,13 @@
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
+
+const animation = keyframes`
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+`;
 
 export const AlignCenter = styled.div`
     width: 100%;
@@ -11,6 +20,7 @@ export const AppContainer = styled.div`
     box-sizing: border-box;
     margin-top: 52px;
     justify-content: space-between;
+    animation: ${animation} 1s linear;
     @media(max-width: 767px) {
         display: block;
     }

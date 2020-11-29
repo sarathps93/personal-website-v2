@@ -1,15 +1,20 @@
+import { Suspense, lazy } from 'react';
 import { AppContainer } from './styles/common';
-import { LeftPane, ProfileFeed, RightPane } from './organisms';
 import Header from './molecules/header';
 
 function App() {
+  const LeftPane = lazy(() => import('./organisms/leftPane'));
+  const ProfileFeed = lazy(() => import('./organisms/profileFeed'));
+  const RightPane = lazy(() => import('./organisms/rightPane'));
   return (
     <>
       <Header />
       <AppContainer>
-        <LeftPane />
-        <ProfileFeed />
-        <RightPane />
+        <Suspense fallback={() => <div />}>
+          <LeftPane />
+          <ProfileFeed />
+          <RightPane />
+        </Suspense>
       </AppContainer>
     </>
   );

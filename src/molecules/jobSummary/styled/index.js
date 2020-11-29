@@ -55,7 +55,6 @@ export const Designation = styled.div`
 
 export const Date = styled.span`
     font-size: 14px;
-    opacity: 0.8;
     &::before {
         content: ", (";
     }
