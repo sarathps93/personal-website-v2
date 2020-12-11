@@ -4,7 +4,7 @@ import { centerPositionStyles, StyledAnchor } from '../../../styles/common';
 export const Container = styled.header`
     width: 100%;
     height: 52px;
-    background-color: var(--secondary);
+    background-color: var(--secondary-medium);
     position: fixed;
     top: 0;
     z-index: 9999;

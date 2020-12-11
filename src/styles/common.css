@@ -3,6 +3,7 @@ html {
     --border-color: rgb(204,204,204);
     --border: 1px solid var(--border-color);
     --secondary: #157eb3;
+    --secondary-medium: #0077b3;
     --secondary-dark: #074a6f;
     --white: #fff;
     --green: #487b04;
