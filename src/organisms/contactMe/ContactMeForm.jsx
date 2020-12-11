@@ -10,6 +10,7 @@ import {
 } from './styled';
 import { StyledInput } from '../../styles/common';
 import successSvg from '../../assets/svgs/success.svg';
+import { send } from 'emailjs-com';
 
 const ContactMeForm = ({ setPortal }) => {
     const [userInput, setUserInput] = useState({
@@ -37,7 +38,12 @@ const ContactMeForm = ({ setPortal }) => {
 
     const handleMessageSubmit = (e) => {
         e.preventDefault();
-        if(shouldEnableSubmit) {
+        if(shouldEnableSubmit) {       
+            send("service_pq2dqsb", "template_p6zjhs9", {
+                from_name: userInput.name,
+                message: userInput.message,
+                reply_to: userInput.contact,
+            });
             setFormSubmitted(true);
         }
     }
