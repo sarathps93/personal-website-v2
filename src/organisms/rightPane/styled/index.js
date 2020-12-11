@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { verticalAlign } from '../../../styles/common';
+import { verticalAlign, FlexContainer, StyledAnchor } from '../../../styles/common';
 
 export const Container = styled.div`
     ${verticalAlign};

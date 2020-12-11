@@ -80,6 +80,9 @@ export const StyledAnchor = styled.a`
     span {
         margin-left: 6px
     }
+    &:hover {
+        text-decoration: underline;
+    }
 `;
 
 export const StyledInput = styled.input`
@@ -115,4 +118,8 @@ export const LinkStyleButton = styled.button`
     text-decoration: underline;
     cursor: pointer;
     outline: none;
+`;
+
+export const Hr = styled.hr`
+    margin: 18px 0;
 `;

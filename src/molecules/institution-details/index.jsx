@@ -4,19 +4,18 @@ import {
     ImageContainer,
     Image,
     Description,
-    CompanyName,
-    Designation,
+    Institution,
+    Title,
     Date,
     Location,
     Content
 } from './styled';
-import contents from '../../contents';
 import { safeAnchorInNewTab, createMarkup } from '../../utils/appUtils';
 import ReadMoreButton from '../readMore';
 
-const JobSummary = () => (
+const JobSummary = ({ content }) => (
     <div>
-        {contents.experience.map(exp => (
+        {content.map(exp => (
             <Container key={exp.name}>
                 <FlexContainer>
                     <ImageContainer>
@@ -24,16 +23,16 @@ const JobSummary = () => (
                     </ImageContainer>
                 </FlexContainer>
                 <Description>
-                    <CompanyName
+                    <Institution
                         href={exp.href}
                         {...safeAnchorInNewTab}
                     >
                         {exp.name}
-                    </CompanyName>
-                    <Designation>
+                    </Institution>
+                    <Title>
                         {exp.designation}
                         <Date><em>{exp.dateRange}</em></Date>
-                    </Designation>
+                    </Title>
                     <Location dangerouslySetInnerHTML={createMarkup(exp.location)} />
                     <Content dangerouslySetInnerHTML={createMarkup(exp.content)} />
                     <ReadMoreButton className={exp.readMoreClass} />

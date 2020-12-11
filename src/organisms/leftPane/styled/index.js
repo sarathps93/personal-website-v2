@@ -37,18 +37,6 @@ export const Designation = styled.div`
     text-align: center;
 `;
 
-export const StyledAnchor = styled.a`
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    margin-right: 6px;
-    font-size: 16px;
-    color: var(--primary);
-    span {
-        margin-left: 6px
-    }
-`;
-
 export const AnchorButton = styled.div`
     width: 100px;
     border: 1px solid var(--primary);

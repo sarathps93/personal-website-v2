@@ -1,17 +1,27 @@
-import { Card, VerticalAlign } from '../../styles/common';
+import { Card, VerticalAlign, Hr } from '../../styles/common';
 import contents from '../../contents';
 import ContactMe from '../contactMe';
-import { Container, FeedHeading, FeedBody } from './styled';
+import {
+    Container,
+    FeedHeading,
+    FeedBody,
+    ProjectContainer,
+    ProjectTitle,
+    ProjectDescription,
+    SeeProject,
+    ProjectBlock
+} from './styled';
 import AboutMeSvg from '../../assets/svgs/aboutMe.svg';
 import ExperienceSvg from '../../assets/svgs/experience.svg';
-import SapientLogo from '../../assets/images/sapient.png';
-import { createMarkup } from '../../utils/appUtils';
+import EducationLogo from '../../assets/svgs/education.svg';
+import ProjectLogo from '../../assets/svgs/project.svg';
+import FolderLogo from '../../assets/svgs/folder.svg';
+import { createMarkup, safeAnchorInNewTab } from '../../utils/appUtils';
 import ReadMore from '../../molecules/readMore';
-import JobSummary from '../../molecules/jobSummary';
+import InstitutionDetails from '../../molecules/institution-details';
 
 
 const ProfileFeed = () => {
-
     return (
         <Container>
             <Card>
@@ -25,7 +35,7 @@ const ProfileFeed = () => {
                     </FeedHeading>
                 </VerticalAlign>
                 <FeedBody dangerouslySetInnerHTML={createMarkup(contents.aboutMe)} />
-                <ReadMore className="specialisation_summary" />
+                <ReadMore className="readmore-aboutme" />
             </Card>
             <Card>
                 <VerticalAlign>
@@ -34,7 +44,42 @@ const ProfileFeed = () => {
                         Professional Experience
                     </FeedHeading>
                 </VerticalAlign>
-                <JobSummary src={SapientLogo} />
+                <InstitutionDetails content={contents.experience}/>
+            </Card>
+            <Card>
+                <VerticalAlign>
+                    <img src={ProjectLogo} alt="projects" />
+                    <FeedHeading style={{ textAlign: 'left' }}>
+                        Personal / Community projects
+                    </FeedHeading>
+                </VerticalAlign>
+                <ProjectContainer>
+                {contents.projects.map(project => (
+                    <ProjectBlock key={project.title}>
+                        <ProjectTitle>
+                            <img src={FolderLogo} alt="folder" />
+                            <span>{project.title}</span>
+                        </ProjectTitle>
+                        <ProjectDescription>{project.description}</ProjectDescription>
+                        <SeeProject
+                            href={project.link}
+                            {...safeAnchorInNewTab}
+                        >
+                            See Project
+                        </SeeProject>
+                        <Hr />
+                    </ProjectBlock>
+                ))}
+                </ProjectContainer>   
+            </Card>
+            <Card>
+                <VerticalAlign>
+                    <img src={EducationLogo} alt="education" />
+                    <FeedHeading style={{ textAlign: 'left' }}>
+                        Education
+                    </FeedHeading>
+                </VerticalAlign>
+                <InstitutionDetails content={contents.education}/>
             </Card>
         </Container>
     )

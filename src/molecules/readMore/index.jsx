@@ -9,14 +9,16 @@ const ReadMore = ({ className }) => {
         document.querySelector(`.${className}`).style.display = 'block';
     }
     useEffect(() => {
-        document.querySelector(`.${className}`).style.display = 'none';
+        if(className) {
+            document.querySelector(`.${className}`).style.display = 'none';
+        }       
     }, []);
-
-    return !renderItems && (
+    const shouldRender = className && !renderItems;
+    return shouldRender ? (
         <ReadMoreButton onClick={onReadMoreClick}>
             ...read more
         </ReadMoreButton>
-    )
+    ) : null;
 };
 
 export default ReadMore;

@@ -36,6 +36,6 @@ export const experience = (() => {
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     const years = Math.floor(diffDays / 365);
     let months = 12 - ((joiningDate.getMonth() + 1) - (currentDate.getMonth() + 1));
-    if(months === 0) months = 0;
+    if(months === 12) months = 0;
     return `${years}.${months}`;
 })();

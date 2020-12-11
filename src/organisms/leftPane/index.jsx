@@ -59,6 +59,7 @@ const LeftPane = () => {
                         <StyledAnchor
                             key={item.id}
                             href={item.href}
+                            style={{ textDecoration: 'none' }}
                             {...safeAnchorInNewTab}
                         >
                             <AnchorButton>{item.label}</AnchorButton>

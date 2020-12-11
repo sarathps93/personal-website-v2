@@ -34,7 +34,7 @@ export const Image = styled.img`
     }
 `;
 
-export const CompanyName = styled(StyledAnchor)`
+export const Institution = styled(StyledAnchor)`
     font-weight: 600;
     font-size: 18px;
     &:hover {
@@ -47,7 +47,7 @@ export const Description = styled.div`
     padding: 6px;
 `;
 
-export const Designation = styled.div`
+export const Title = styled.div`
     font-size: 16px;
     font-weight: 700;
     color: var(--green);

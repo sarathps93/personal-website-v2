@@ -1,4 +1,7 @@
-import { Container, SkillItem } from './styled';
+import {
+    Container,
+    SkillItem
+} from './styled';
 import { Card, SubHeading, FlexContainer, StyledAnchor } from '../../styles/common';
 import contents from '../../contents';
 
@@ -21,6 +24,14 @@ const RightPane = () => {
                         {osc.text}
                     </StyledAnchor>
                 ))}
+                </FlexContainer>   
+            </Card>
+            <Card>
+                <SubHeading>Worked with</SubHeading>
+                <FlexContainer style={{ justifyContent: 'space-between' }}>
+                    {contents.clients.map(client => (
+                        <img key={client.label} src={client.src} alt={client.label} style={{ marginBottom: '18px' }} />
+                    ))}
                 </FlexContainer>   
             </Card>
         </Container>
