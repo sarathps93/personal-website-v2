@@ -1,14 +1,15 @@
 import { FlexContainer } from '../../styles/common';
 import {
     Container,
-    ImageContainer,
     Image,
     Description,
     Institution,
     Title,
     Date,
     Location,
-    Content
+    Content,
+    ImageContainer,
+    Via
 } from './styled';
 import { safeAnchorInNewTab, createMarkup } from '../../utils/appUtils';
 import ReadMoreButton from '../readMore';
@@ -29,6 +30,7 @@ const JobSummary = ({ content }) => (
                     >
                         {exp.name}
                     </Institution>
+                    {!!exp.via && <Via>via {exp.via}</Via>}
                     <Title>
                         {exp.designation}
                         <Date><em>{exp.dateRange}</em></Date>

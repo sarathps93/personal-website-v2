@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { verticalAlign, StyledAnchor } from '../../../styles/common';
+import { StyledAnchor } from '../../../styles/common';
 
 export const Container = styled.div`
     display: flex;
@@ -9,21 +9,11 @@ export const Container = styled.div`
 export const ImageContainer = styled.div`
     width: fit-content;
     height: 150px;
-    ${verticalAlign};
-    padding: 12px;
-    border: var(--border);
-    border-radius: 18px;
-    @media(max-width: 1000px) {
-        height: 100px;
-    }
-    @media(max-width: 767px) {
-        height: 70px;
-    }
 `;
 
 export const Image = styled.img`
-    width: 150px;
-    max-height: 140px;
+    align-self: flex-start;
+    transform: translate(0, 4px);
     @media(max-width: 1000px) {
         width: 100px;
         max-height: 90px;
@@ -45,6 +35,7 @@ export const Institution = styled(StyledAnchor)`
 export const Description = styled.div`
     margin-left: 16px;
     padding: 6px;
+    padding-top: 0;
 `;
 
 export const Title = styled.div`
@@ -70,3 +61,8 @@ export const Location = styled.div`
 `;
 
 export const Content = styled.p``;
+
+export const Via = styled.span`
+    opacity: 0.8;
+    font-size: 14px;
+`;

@@ -26,14 +26,14 @@ const RightPane = () => {
                 ))}
                 </FlexContainer>   
             </Card>
-            <Card>
+            {/* <Card>
                 <SubHeading>Worked with</SubHeading>
                 <FlexContainer style={{ justifyContent: 'space-between' }}>
                     {contents.clients.map(client => (
                         <img key={client.label} src={client.src} alt={client.label} style={{ marginBottom: '18px' }} />
                     ))}
                 </FlexContainer>   
-            </Card>
+            </Card> */}
         </Container>
     )
 };

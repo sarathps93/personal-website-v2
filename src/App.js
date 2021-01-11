@@ -10,7 +10,7 @@ function App() {
     <>
       <Header />
       <AppContainer>
-        <Suspense fallback={() => <div />}>
+        <Suspense fallback={<div />}>
           <LeftPane />
           <ProfileFeed />
           <RightPane />

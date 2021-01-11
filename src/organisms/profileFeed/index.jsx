@@ -61,12 +61,14 @@ const ProfileFeed = () => {
                             <span>{project.title}</span>
                         </ProjectTitle>
                         <ProjectDescription>{project.description}</ProjectDescription>
-                        <SeeProject
-                            href={project.link}
-                            {...safeAnchorInNewTab}
-                        >
-                            See Project
-                        </SeeProject>
+                        {!!project.link && (
+                            <SeeProject
+                                href={project.link}
+                                {...safeAnchorInNewTab}
+                            >
+                                See Project
+                            </SeeProject>
+                        )}
                         <Hr />
                     </ProjectBlock>
                 ))}

@@ -1,11 +1,9 @@
 import locationSVG from '../assets/svgs/location.svg';
-import sapientImg from '../assets/images/sapient.png';
-import wiproImg from '../assets/images/wipro.png';
-import universityImg from '../assets/images/university.png';
+import universitySVG from '../assets/svgs/university.svg';
 import tescoSVG from '../assets/svgs/tesco.svg';
 import lloydsSVG from '../assets/svgs/lloyds.svg';
 import walmartSVG from '../assets/svgs/walmart.svg';
-import { age, experience } from '../utils/appUtils';
+import { experience } from '../utils/appUtils';
 
 const contents = {
     name: 'Sarath P S',
@@ -69,10 +67,10 @@ const contents = {
         'Selenium'
     ],
     openSourceContributions: [
-        { text: 'Jest', link: 'https://github.com/facebook/jest' },
-        { text: 'React', link: 'https://github.com/facebook/react' },
         { text: 'WebdriverIO', link: 'https://github.com/webdriverio/webdriverio' },
         { text: 'VisX', link: 'https://github.com/airbnb/visx' },
+        { text: 'Jest', link: 'https://github.com/facebook/jest' },
+        { text: 'React', link: 'https://github.com/facebook/react' }
     ],
     languages: [
         {
@@ -92,8 +90,8 @@ const contents = {
             proficiency: 4
         },
     ],
-    aboutMe: `Hi, I am Sarath, a ${age} years old Software Developer having ${experience} years of experience in Software develoment, testing, automation, deployment & maintenance.
-            Member of <strong class="profile-feed__strong">WebdriverIO</strong> official project contributors team and also an open source contributor in other projects such as <strong class="profile-feed__strong">VisX</strong>, <strong class="profile-feed__strong">Jest</strong> & <strong class="profile-feed__strong">React</strong>.
+    aboutMe: `Hi, I am Sarath, a Software Developer having ${experience} years of experience in Software development, testing, automation, deployment & maintenance. Primarily focussed on Web Application development using JavaScript / NodeJs.<br />
+            Member of <strong class="profile-feed__strong">WebdriverIO</strong>'s official project contributors' team and also an open source contributor in other projects such as <strong class="profile-feed__strong">VisX</strong>, <strong class="profile-feed__strong">Jest</strong> & <strong class="profile-feed__strong">React</strong>.
             <div class="readmore-aboutme">
             <p>I am currently working with <strong class="profile-feed__strong"><a href="https://www.tesco.com/" class="profile-feed__link" target="__blank" rel="noopener noreferrer">Tesco</a></strong> <span class="reference-text">(through Publicis Sapient)</span> as an SDE-II. I also have got experience in working with clients such as <strong class="profile-feed__strong"><a href="https://www.lloydsbank.com/" class="profile-feed__link" target="__blank" rel="noopener noreferrer">Lloyds Banking Group</a></strong> <span class="reference-text">(3y)</span> & <strong class="profile-feed__strong"><a href="https://www.walmart.com/" class="profile-feed__link" target="__blank" rel="noopener noreferrer">Walmart</a></strong> <span class="reference-text">(1.3y)</span>.
             <p>I specialise in</p>
@@ -108,32 +106,45 @@ const contents = {
             `,
     experience: [
         {
-            name: 'Publicis Sapient',
-            href: 'https://www.publicissapient.com/',
-            designation: 'Senior Associate',
-            dateRange: '04/2020 - present',
+            name: 'TESCO PLC',
+            via: 'Publicis Sapient',
+            href: 'https://www.tesco.com/',
+            designation: 'SDE - II',
+            dateRange: '05/2020 - present',
             location: 'Bengaluru, India',
-            imageUrl: sapientImg,
-            readMoreClass: 'readmore_sapient',
-            content: `I joined Publicis Sapient as a Senior Associate in April 2020 and by the starting of June I have started working for Tesco full time. I am really grateful that I got a chance to work on some exciting projects right from the beginning. I learnt GraphQL, brushed up my skills on TypeScript and developed a NodeJs GraphQL server for supporting an e-commerce application.
-            <div class="readmore_sapient"><p>Started learning more about Amazon Web Services & Kubernetes to up-skill my knowledge about cloud deployment. Got a certification done in AWS and continued exploring further about distributed systems architecture and avoiding single point of failure.</p>
+            imageUrl: tescoSVG,
+            readMoreClass: 'readmore_tesco',
+            content: `After joing Publicis Sapient as a Senior Associate in April 2020 I immediately started working with Tesco as an SDE - II. Utilising the free time I got during the onboarding formalities I invested it in learning GraphQL, brushed up my skills on TypeScript and developed a NodeJs GraphQL server for supporting an e-commerce application.
+            <div class="readmore_tesco"><p>Started learning more about Amazon Web Services & Kubernetes to up-skill my knowledge about cloud deployment. Got a certification done in AWS and continued exploring further about distributed systems architecture and avoiding single point of failure.</p>
             After joining Tesco I worked (and still working) on some exciting projects, right from building large scale mono repos for both front end(React) & backend(NodeJs + TypeScript) modules, to architecting & developing exciting UI applications using React & Redux. Got hands on exposure in data visualisation using d3 based charting libraries.
             <p>My experience with Tesco has taught me to use engineering skills for the continuous improvement of development practices relates to code quality, code review, test coverage, reduced code duplication and improved code sharing. Thinking in terms of quality & scalability has become a part of my everyday development</p></div>`
         },
         {
-            name: 'Wipro Digital',
-            href: 'https://wiprodigital.com/',
-            designation: 'Software Engineer',
-            dateRange: '12/2014 - 04/2020',
+            name: 'Lloyds Banking Group',
+            via: 'Wipro Digital',
+            href: 'https://www.lloydsbankinggroup.com/',
+            designation: 'Senior Software Engineer',
+            dateRange: '06/2017 - 04/2020',
             location: 'London, UK & Bengaluru, India',
-            imageUrl: wiproImg,
-            readMoreClass: 'readmore_wipro',
-            content: `I joined Wipro as a part of Campus placement offer I got during the year of 2014. My Wipro training happened in Greater Noida, NCR and my project allocation happened to be in Bengaluru.
-            <p>Coming from a non computer science background, I started my career as a manual tester and later moved into the field of automation with Selenium. Inspired by my colleagues from the development team, I started learning JavaScript and slowly moved my way into front end development.</p>
-            <div class="readmore_wipro"><p>During my tenure at Wipro, I worked with clients such as Lloyds Banking Group & Walmart full time.</p>
-            In Walmart, I learnt about the Retail domain and I contributed to the front end development in React and automation using Selenium. I also got some exposure with MySQL as well.
-            <p>Working with Lloyds Banking Group was one of the turning points in my career. I worked closely with them in their office in London, UK for almost 2.4 years. I got a chance to work in their digital transformation journey by migrating legacy applications into newer React - Redux framework  from scratch.</p>
-            <p>I also learnt about developing re-usable React component library, worked in the automation of literally everything around testing using NodeJs automation frameworks. Focussing on accessibility, security, browser support & collecting analytics has become an integral part of my day to day development activities. Learnt more about distributed systems, micro services architecture, Kubernetes and Cloud infrastructure.</p></div>`
+            imageUrl: lloydsSVG,
+            readMoreClass: 'readmore_lloyds',
+            content: `I joined Lloyds Banking Group in June 2017 as a Software Engineer in Bengaluru. By January 2018, I moved to their client location at London, UK.
+            <div class="readmore_lloyds">
+            <p>Working with Lloyds Banking Group was one of the turning points in my career. I worked in their London office for almost 2.4 years. I got a chance to be a part of their digital transformation journey. Migrated their legacy applications into newer React - Redux framework from scratch and automated literally everything around testing using NodeJs automation frameworks.</p>
+            <p>Learnt more about the best practices around developing re-usable React component library. Focussing on accessibility, security, browser support & collecting analytics has become an integral part of my day to day development activities. Learnt more about distributed systems, micro services architecture, Kubernetes and Cloud infrastructure.</p></div>`
+        },
+        {
+            name: 'Walmart Inc.',
+            via: 'Wipro Technologies',
+            href: 'https://www.walmart.com/',
+            designation: 'Software Engineer',
+            dateRange: '01/2016 - 06/2017',
+            location: 'Bengaluru, India',
+            imageUrl: walmartSVG,
+            readMoreClass: 'readmore_walmart',
+            content: `I started working with Walmart as a Selenium automation engineer and slowly started my journey towards JavaScript & NodeJs development.
+            <div class="readmore_walmart"><p>Coming from a non computer science background, I had to invest a lot of time in learning the coding practices and to prove myself as a developer.</p>
+            In Walmart, I learnt about the Retail domain and I contributed to the front end development in React and automation using Selenium. I also got exposure with MySQL as well.`
         }
     ],
     education: [
@@ -142,20 +153,22 @@ const contents = {
             href: 'https://www.annauniv.edu/',
             designation: 'Bachelor of Engineering',
             dateRange: 'Batch of 2014',
-            imageUrl: universityImg,
+            imageUrl: universitySVG,
             location: 'Chennai, India',
         }
     ],
     projects: [
         {
-            title: 'WebdriverIO TypeScript migration',
-            link: 'https://github.com/webdriverio/webdriverio',
-            description: 'Contributing to the migration of WebdriverIO mono repo packages into TypeScript.'
+            title: 'WebdriverIO',
+            description: 'A NodeJs based automation framework which has more than 700,000 weekly downloads from npm. Refactored and migrated one of their packages into TypeScript and also fixed 2 open defects'
         },
         {
-            title: 'Adding new Charts in VisX library',
-            link: 'https://github.com/airbnb/visx',
-            description: 'Adding new chart scales, primitives and a new circular barplot chart in VisX, a d3 based React library'
+            title: 'VisX',
+            description: 'A D3 based React charting library which has more than 15,000 weekly downloads from npm. Currently added new D3 scales and ongoing development of chart axes and a new circular bar plot chart'
+        },
+        {
+            title: 'Jest & React',
+            description: 'Fixed 3 major defects in Jest, an open-source unit test framework which has more than 8 million weekly downloads from npm. An approved pull request in React repository for a defect fix'
         },
         {
             title: 'Tasks Board',
