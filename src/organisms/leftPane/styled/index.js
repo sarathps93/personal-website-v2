@@ -26,7 +26,7 @@ export const ProfilePhoto = styled.img`
 
 export const Name = styled.div`
     font-weight: bold;
-    font-size: 36px;
+    font-size: 24px;
     text-align: center;
     @media(max-width: 1000px) {
         font-size: 24px;
