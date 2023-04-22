@@ -6,8 +6,8 @@ import walmartSVG from '../assets/svgs/walmart.svg';
 import { experience } from '../utils/appUtils';
 
 const contents = {
-    name: 'Sarath P S',
-    designation: 'Software Development Engineer - II',
+    name: 'Sarath Sasidharan',
+    designation: 'Senior Software Engineer - Full stack',
     contactInfo: [
         {
             id: 'location',
@@ -60,6 +60,9 @@ const contents = {
         'CSS3',
         'React',
         'Redux',
+        'Java',
+        'Spring boot',
+        'Kafka',
         'React Native',
         'GraphQL',
         'Kubernetes',
@@ -71,8 +74,7 @@ const contents = {
     openSourceContributions: [
         { text: 'WebdriverIO', link: 'https://github.com/webdriverio/webdriverio' },
         { text: 'VisX', link: 'https://github.com/airbnb/visx' },
-        { text: 'Jest', link: 'https://github.com/facebook/jest' },
-        { text: 'React', link: 'https://github.com/facebook/react' }
+        { text: 'Jest', link: 'https://github.com/facebook/jest' }
     ],
     languages: [
         {
@@ -92,10 +94,10 @@ const contents = {
             proficiency: 4
         },
     ],
-    aboutMe: `Hi, I am Sarath, a Software Developer having ${experience} years of experience in Software development, testing, automation, deployment & maintenance. Primarily focussed on Web Application development using JavaScript / NodeJs.<br />
+    aboutMe: `Hi, I am Sarath, a Full stack developer having ${experience} years of experience in Software development, testing, automation, deployment & maintenance. Primarily focussed on Web Application development using JavaScript, React & backend development using NodeJs / Java + Spring boot.<br /><br />
             Member of <strong class="profile-feed__strong">WebdriverIO</strong>'s official project contributors' team and also an open source contributor in other projects such as <strong class="profile-feed__strong">VisX</strong>, <strong class="profile-feed__strong">Jest</strong> & <strong class="profile-feed__strong">React</strong>.
             <div class="readmore-aboutme">
-            <p>I am currently working with <strong class="profile-feed__strong"><a href="https://www.walmart.com/" class="profile-feed__link" target="__blank" rel="noopener noreferrer">Walmart Global Tech</a></strong> as an SDE-III.
+            <p>I am currently working with <strong class="profile-feed__strong"><a href="https://www.walmart.com/" class="profile-feed__link" target="__blank" rel="noopener noreferrer">Walmart Global Tech</a></strong> as a Senior Software Engineer.
             <p>I previously worked full time with <strong class="profile-feed__strong"><a href="https://www.publicissapient.com/" class="profile-feed__link" target="__blank" rel="noopener noreferrer">Publicis Sapient</a></strong> <span class="reference-text">(April-2020 to March-2021)</span> as a Senior Associate and with 
             <strong class="profile-feed__strong"><a href="https://wiprodigital.com/" class="profile-feed__link" target="__blank" rel="noopener noreferrer">Wipro Digital</a></strong> <span class="reference-text">(Dec-2014 to Apr-2020)</span> as a Senior Software Engineer.
             <br/>During my tenure at Sapient & Wipro, I worked full time with clients such as <strong class="profile-feed__strong"><a href="https://www.tesco.com/" class="profile-feed__link" target="__blank" rel="noopener noreferrer">Tesco</a></strong> <span class="reference-text">(1y)</span>, <strong class="profile-feed__strong"><a href="https://www.lloydsbank.com/" class="profile-feed__link" target="__blank" rel="noopener noreferrer">Lloyds Banking Group</a></strong> <span class="reference-text">(3y)</span> & <strong class="profile-feed__strong"><a href="https://www.walmart.com/" class="profile-feed__link" target="__blank" rel="noopener noreferrer">Walmart</a></strong> <span class="reference-text">(1.3y)</span>.</p>
@@ -104,9 +106,11 @@ const contents = {
             <li>Building enterprise level web applications using React - Redux or with plain vanilla JavaScript</li>
             <li>Developing IOS and Android apps using React native</li>
             <li>Developing NodeJs server applications along with GraphQL using JavaScript or TypeScript</li>
+            <li>Developing backend applications using Java & Sprint boot</li>
             <li>Automation of functional and non-functional software testing using NodeJs test frameworks such as WebDriverIO or Selenium</li>
             <li>Kubernetes deployment, scaling, logging & monitoring</li>
-            <li>Designing distributed systems architecture</li>
+            <li>Data visualisation using D3 based charting libraries</li>
+            <li>Designing distributed systems along with event driven architecture architecture</li>
             </ul>
             </div>
             </p>
@@ -115,20 +119,21 @@ const contents = {
         {
             name: 'Walmart Global Tech',
             href: 'https://www.walmart.com/',
-            designation: 'SDE - III',
+            designation: 'Senior Software Engineer',
             dateRange: '03/2021 - present',
             location: 'Bengaluru, India',
             imageUrl: walmartSVG,
             readMoreClass: 'readmore_walLabs',
-            content: `I joined Walmart Global Tech as a Software Engineer - III. Learnt React native and worked on building iOS and Android apps which enhances customer support experience at stores.
-            <div class="readmore_walLabs"><p>At Walmart, I enjoyed taking additional responsibiltiies which includes designing full stack systems architecture, handling cloud infra and cost optimization</p>
+            content: `I joined Walmart Global Tech as a Software Engineer - III & later got promoted to a Senior Software Engineer role. Learnt React native and worked on building iOS and Android apps which enhances customer support experience at stores.
+            <div class="readmore_walLabs"><p>Also started putting efforts in learning Java 11 & Spring boot and starting delivering backend applications from scratch. Involved in designing event driven systems with de-coupled architecture.</p>
+            <p>At Walmart, I enjoyed taking additional responsibiltiies which includes designing full stack systems architecture, handling cloud infra and cost optimization</p>
             </div>`
         },
         {
             name: 'TESCO PLC',
             via: 'Publicis Sapient',
             href: 'https://www.tesco.com/',
-            designation: 'SDE - II',
+            designation: 'Senior Associate - L2',
             dateRange: '05/2020 - 03/2021',
             location: 'Bengaluru, India',
             imageUrl: tescoSVG,
