@@ -193,16 +193,6 @@ const contents = {
         {
             title: 'Jest & React',
             description: 'Fixed 3 major defects in Jest, an open-source unit test framework which has more than 8 million weekly downloads from npm. An approved pull request in React repository for a defect fix'
-        },
-        {
-            title: 'Tasks Board',
-            link: 'https://tasks-board-pwa.herokuapp.com/',
-            description: 'An offline first serverless progressive web application built using React & Redux which let\'s you add & manage your tasks. It works on utilising browser\'s indexedDb storage'
-        },
-        {
-            title: 'Rick & Morty catalogue',
-            link: 'https://rick-morty-catalogue.herokuapp.com/',
-            description: 'A server side rendered React application which catalogues the details of all the characters in the famous American cartoon Rick and Morty.'
         }
     ],
     clients: [
